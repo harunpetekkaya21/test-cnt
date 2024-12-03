@@ -1,0 +1,79 @@
+<p-breadcrumb class="max-w-full" [model]="items">
+    <ng-template pTemplate="item" let-item>
+        <ng-container *ngIf="item.route; else elseBlock">
+            <a [routerLink]="item.route" class="p-menuitem-link">
+                <span [ngClass]="[item.icon ? item.icon : '', 'text-color']"></span>
+                <span class="text-primary font-semibold">{{ item.label }}</span>
+            </a>
+        </ng-container>
+        <ng-template #elseBlock>
+            <a [href]="item.url">
+                <span class="text-color">{{ item.label }}</span>
+            </a>
+        </ng-template>
+    </ng-template>
+</p-breadcrumb>
+
+<div class="grid mt-1">
+    <div class="col-12">
+        <div class="card">
+            <span style="font-size: 20px; color: var(--primary-color); font-weight: 700;">Create New Room Type</span>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="grid">
+    <div class="col-12">
+        <div class="card">
+
+            <div class="p-fluid p-formgrid grid">
+                <div class="field col-12 md:col-12">
+                    <p-floatLabel>
+                        <input pInputText id="username" [(ngModel)]="value" />
+                        <label for="username">Room Type Name</label>
+                    </p-floatLabel>
+                </div>
+                <div class="field col-12 md:col-6">
+                    <p-floatLabel>
+                        <input pInputText id="username" [(ngModel)]="value" />
+                        <label for="username">Oda Sayisi</label>
+                    </p-floatLabel>
+                </div>
+                <div class="field col-12 md:col-6">
+                    <p-floatLabel>
+                        <input pInputText id="username" [(ngModel)]="value" />
+                        <label for="username">Musait Oda Sayisi</label>
+                    </p-floatLabel>
+                </div>
+
+                <div class="field col-12 md:col-6">
+                    <p-floatLabel>
+                        <input pInputText id="username" [(ngModel)]="value" />
+                        <label for="username">Yetiskin Kapasitesi</label>
+                    </p-floatLabel>
+                </div>
+                <div class="field col-12 md:col-6">
+                    <p-floatLabel>
+                        <input pInputText id="username" [(ngModel)]="value" />
+                        <label for="username">Cocuk Kapasitesi</label>
+                    </p-floatLabel>
+                </div>
+
+                <div class="field col-12 md:col-12">
+                    <p-floatLabel>
+                        <input pInputText id="username" [(ngModel)]="value" />
+                        <label for="username">PP Price</label>
+                    </p-floatLabel>
+                </div>
+               
+              
+            </div>
+           
+        </div>
+        <p-button label="Cancel" severity="secondary" (onClick)="visible = false" [style]="{ marginRight: '5px' }" />
+        <p-button label="Save" (onClick)="visible = false" />
+
+    </div>
+</div>

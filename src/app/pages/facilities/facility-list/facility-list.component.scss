@@ -1,0 +1,89 @@
+
+:host ::ng-deep .p-datatable thead th {
+    background-color: var(--primary-color); /* Header arka plan rengi */
+    color: white; /* Başlık metin rengi */
+    border-color: #005f99 !important; /* Header border rengi */
+    text-align: center; /* Metni ortala */
+}
+
+:host ::ng-deep .p-datatable-tbody tr td {
+    border: none /* Satır altı ve yan border renkleri */
+}
+
+:host ::ng-deep .p-datatable-header {
+    border-bottom:  none /* Header altındaki genel border */
+}
+
+:host ::ng-deep .p-datatable-tbody tr {
+    border-bottom:  none /* Satırlar arası border */
+}
+
+:host ::ng-deep .p-datatable-footer {
+    border-top:  none /* Footer üst border */
+}
+
+:host ::ng-deep .p-datatable {
+    border:  none /* Tablo genel border */
+}
+
+:host ::ng-deep .p-datatable thead th:hover {
+    background-color: #005f99; /* Hover sırasında header arka plan rengi */
+    color: #ffffff; /* Hover sırasında başlık metin rengi */
+}
+
+
+:host ::ng-deep .p-datatable-header {
+    background-color: #ffffff !important; /* Arka plan rengi */
+    color: white !important; /* Metin rengi */
+    border: none !important;/* Alt border */
+    padding: 10px; /* İç boşluk */
+}
+
+
+// clear button
+:host ::ng-deep .p-button.p-button-outlined {
+    background-color: var(--primary-color) !important; /* Arka plan rengi */
+    border-color: #ffffff !important; /* Çerçeve rengi */
+    color: white !important; /* Metin rengi */
+}
+
+:host ::ng-deep .p-button.p-button-outlined:hover {
+    background-color: var(--secondary-color) !important; /* Hover durumunda arka plan rengi */
+    border-color: #ffffff !important; /* Hover durumunda çerçeve rengi */
+    color: white !important; /* Hover durumunda metin rengi */
+}
+
+//search button
+// :host ::ng-deep .p-input-icon-left input {
+//     background-color: #f29f05 !important; /* Arka plan rengi */
+//     border: 1px solid #ffffff !important; /* Kenarlık rengi */
+//     color: white !important; /* Metin rengi */
+   
+    
+// }
+
+// :host ::ng-deep .p-input-icon-left i {
+//     color: white !important; /* İkon rengi */
+// }
+
+// :host ::ng-deep .p-input-icon-left input::placeholder {
+//     color: white !important; /* Placeholder metin rengi */
+// }
+
+// :host ::ng-deep .p-input-icon-left input:focus {
+//     border-color: #ffcc33 !important; /* Focus durumunda kenarlık rengi */
+//     outline: none !important; /* Focus outline kaldır */
+//     box-shadow: 0 0 5px #f29f05 !important; /* Focus durumunda gölge */
+// }
+
+
+//filter icon
+:host ::ng-deep .p-column-filter-menu-button {
+    color: white !important; /* Filtreleme ikon rengi */
+    background-color: transparent !important; /* İkon arka planını şeffaf yap */
+    border: none !important; /* Kenarlıkları kaldır */
+}
+
+:host ::ng-deep .p-column-filter-menu-button:hover {
+    color: #f29f05 !important; /* Hover durumunda ikon rengi */
+}

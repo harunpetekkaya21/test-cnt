@@ -1,0 +1,71 @@
+<div class="grid">
+	<div class="col-12">
+		<div class="card">
+			
+			<div class="p-fluid p-formgrid grid">
+				<div class="field col-12 md:col-6">
+					<label htmlFor="firstname2">Facility Name</label>
+					<input pInputText id="firstname2" pTooltip="Enter facility name" tooltipPosition="top" type="text" />
+				</div>
+				<div class="field col-12 md:col-6">
+					<label htmlFor="state">Facility Type</label>
+					<p-dropdown pTooltip="Select facility type" tooltipPosition="top" [options]="facilityTypes" optionLabel="name" [(ngModel)]="selectedFacilityType"></p-dropdown>
+				</div>
+				<div class="field col-12">
+					<label htmlFor="address">Address</label>
+					<input pInputTextarea id="address" pTooltip="Enter facility address" tooltipPosition="top" rows="4" />
+				</div>
+				<div class="field col-12 md:col-3"> 
+					<label htmlFor="state">Country</label>
+					
+                    <p-dropdown 
+                    pTooltip="Select country" tooltipPosition="top"
+                    [options]="countries" 
+                    [(ngModel)]="selectedCountry"
+                    optionLabel="name"
+                    [showClear]="true"
+                    placeholder="Select a Country">
+                        <ng-template pTemplate="selectedItem">
+                            <div class="flex align-items-center gap-2" *ngIf="selectedCountry">
+                                <img 
+                                    src="https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png"
+                                    [class]="'flag flag-' + selectedCountry['code'].toLowerCase()"
+                                    style="width: 18px" />
+                                <div>{{ selectedCountry['name'] }}</div>
+                            </div>
+                        </ng-template>
+                        <ng-template let-country pTemplate="item">
+                            <div class="flex align-items-center gap-2">
+                                <img 
+                                    src="https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png"
+                                    [class]="'flag flag-' + country.code.toLowerCase()"
+                                    style="width: 18px" />
+                                <div>{{ country.name }}</div>
+                            </div>
+                        </ng-template>
+                </p-dropdown>
+
+				</div>
+				<div class="field col-12 md:col-3">
+					<label htmlFor="state">State</label>
+					<p-dropdown pTooltip="Select facility state" tooltipPosition="top" [options]="states" optionLabel="name" [(ngModel)]="selectedState"></p-dropdown>
+				</div>
+                <div class="field col-12 md:col-2">
+					<label htmlFor="state">City</label>
+					<p-dropdown pTooltip="Select facility state" tooltipPosition="top" [options]="cities" optionLabel="name" [(ngModel)]="selectedCity"></p-dropdown>
+				</div>
+				<div class="field col-12 md:col-2">
+					<label htmlFor="zip">Zip</label>
+					<input pTooltip="Enter zip code" tooltipPosition="top" pInputText id="zip" type="text" />
+				</div>
+                <div class="field col-12 md:col-2">
+					<label htmlFor="state">Currency</label>
+					<p-dropdown pTooltip="Select payment currency type" tooltipPosition="top" [options]="currencies" optionLabel="name" [(ngModel)]="selectedCurrency"></p-dropdown>
+				</div>
+
+                
+			</div>
+            <p-button label="Create" icon="pi pi-check" iconPos="right" />
+		</div>
+	</div>
+</div>
