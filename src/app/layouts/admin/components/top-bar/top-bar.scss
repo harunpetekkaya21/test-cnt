@@ -57,4 +57,10 @@
   }
   
 
-  
+ .layout-topbar-logo {
+    
+      span {
+        color: var(--text-logo-color) !important; // light tema rengi
+      }
+    
+  }

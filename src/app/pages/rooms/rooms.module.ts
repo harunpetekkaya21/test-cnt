@@ -3,12 +3,15 @@ import { CommonModule } from '@angular/common';
 
 import { RoomsRoutingModule } from './rooms-routing.module';
 
-
 @NgModule({
-  declarations: [],
+  declarations: [
+
+  ],
   imports: [
     CommonModule,
-    RoomsRoutingModule
+    RoomsRoutingModule,
+
+  
   ]
 })
 export class RoomsModule { }

@@ -1,8 +1,8 @@
 
 :host ::ng-deep .p-datatable thead th {
-    background-color: var(--primary-color); /* Header arka plan rengi */
-    color: white; /* Başlık metin rengi */
-    border-color: #005f99 !important; /* Header border rengi */
+    background-color: white; /* Header arka plan rengi */
+    color: rgb(122, 114, 114); /* Başlık metin rengi */
+    border-color: white !important; /* Header border rengi */
     text-align: center; /* Metni ortala */
 }
 
@@ -27,8 +27,10 @@
 }
 
 :host ::ng-deep .p-datatable thead th:hover {
-    background-color: #005f99; /* Hover sırasında header arka plan rengi */
-    color: #ffffff; /* Hover sırasında başlık metin rengi */
+    background-color:#f0f0f0; /* Hover sırasında header arka plan rengi */
+    color: rgb(122, 114, 114); /* Hover sırasında başlık metin rengi */
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 
@@ -79,11 +81,11 @@
 
 //filter icon
 :host ::ng-deep .p-column-filter-menu-button {
-    color: white !important; /* Filtreleme ikon rengi */
+    color: var(--primary-color) !important; /* Filtreleme ikon rengi */
     background-color: transparent !important; /* İkon arka planını şeffaf yap */
     border: none !important; /* Kenarlıkları kaldır */
 }
 
 :host ::ng-deep .p-column-filter-menu-button:hover {
-    color: #f29f05 !important; /* Hover durumunda ikon rengi */
+    color: #ffffff !important; /* Hover durumunda ikon rengi */
 }

@@ -1,0 +1,32 @@
+/* Tüm breadcrumb'ın genel stilini değiştirme */
+:host ::ng-deep .p-breadcrumb {
+    background-color: #ffffff; /* Tüm breadcrumb için gri arka plan */
+    
+    border-radius: 11px; /* Kenarları yuvarlatma */
+    margin-bottom: 15px;
+  }
+  
+  /* Breadcrumb öğeleri */
+  :host ::ng-deep .p-breadcrumb .p-breadcrumb-item {
+    background-color: #ffffff;
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 4px;
+  
+    &:hover {
+      background-color: #007BFF;
+      color: #fff;
+    }
+  }
+  
+  /* Son öğe için aktif stil */
+  :host ::ng-deep .p-breadcrumb .p-breadcrumb-item:last-child {
+    background-color: #28A745;
+    color: #fff;
+  }
+
+  :host ::ng-deep .p-datatable-header{
+    background-color: white;
+    border-top: none;
+  }
+  

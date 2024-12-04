@@ -33,6 +33,7 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 			</ul>
 		</ng-container>
     `,
+    styleUrl:'./menu-item.scss',
    animations: [
     trigger('children', [
         state('collapsed', style({
